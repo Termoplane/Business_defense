@@ -4,7 +4,7 @@
       <IconBase
         view-box="0 0 16 17.21"
         :width="'1rem'"
-        :iconColor="'#171D1C'"
+        :icon-color="'#171D1C'"
       >
         <MainLogo />
       </IconBase>
@@ -21,52 +21,11 @@
       <h1> Общество <br> защиты <br> предпринимателей </h1>
     </div>
     <div class="yellow-rectangle" />
-    <client-only>
-      <swiper class="swiper" :options="swiperOption">
-        <div slot="pagination" class="swiper-pagination swiper-pagination-bullets" />
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
-        <swiper-slide>
-          <div class="slide slide-1">
-            <h1 class="slide-int">
-              1
-            </h1>
-            <h1 class="slide-header">
-              Информируем
-            </h1>
-            <p class="slide-paragraph">
-              Рассказываем о самых <br> выжных новостях для <br> предпринимателей
-            </p>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="slide slide-2">
-            <h1 class="slide-int">
-              2
-            </h1>
-            <h1 class="slide-header">
-              Проводим <br> общественные <br> кампании
-            </h1>
-            <p class="slide-paragraph">
-              Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
-            </p>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="slide slide-3">
-            <h1 class="slide-int" style="right: 0.4rem">
-              3
-            </h1>
-            <h1 class="slide-header">
-              Вырабатываем <br> решения
-            </h1>
-            <p class="slide-paragraph">
-              Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
-            </p>
-          </div>
-        </swiper-slide>
-      </swiper>
-      <div class="data-container">
+    <swiper class="swiper" :options="swiperOption">
+      <div slot="pagination" class="swiper-pagination swiper-pagination-bullets" />
+      <div slot="button-prev" class="swiper-button-prev" />
+      <div slot="button-next" class="swiper-button-next" />
+      <swiper-slide>
         <div class="slide slide-1">
           <h1 class="slide-int">
             1
@@ -78,6 +37,8 @@
             Рассказываем о самых <br> выжных новостях для <br> предпринимателей
           </p>
         </div>
+      </swiper-slide>
+      <swiper-slide>
         <div class="slide slide-2">
           <h1 class="slide-int">
             2
@@ -89,6 +50,8 @@
             Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
           </p>
         </div>
+      </swiper-slide>
+      <swiper-slide>
         <div class="slide slide-3">
           <h1 class="slide-int" style="right: 0.4rem">
             3
@@ -100,8 +63,43 @@
             Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
           </p>
         </div>
+      </swiper-slide>
+    </swiper>
+    <div class="data-container">
+      <div class="slide slide-1">
+        <h1 class="slide-int">
+          1
+        </h1>
+        <h1 class="slide-header">
+          Информируем
+        </h1>
+        <p class="slide-paragraph">
+          Рассказываем о самых <br> выжных новостях для <br> предпринимателей
+        </p>
       </div>
-    </client-only>
+      <div class="slide slide-2">
+        <h1 class="slide-int">
+          2
+        </h1>
+        <h1 class="slide-header">
+          Проводим <br> общественные <br> кампании
+        </h1>
+        <p class="slide-paragraph">
+          Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
+        </p>
+      </div>
+      <div class="slide slide-3">
+        <h1 class="slide-int" style="right: 0.4rem">
+          3
+        </h1>
+        <h1 class="slide-header">
+          Вырабатываем <br> решения
+        </h1>
+        <p class="slide-paragraph">
+          Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
