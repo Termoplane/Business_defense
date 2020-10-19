@@ -139,6 +139,10 @@ export default {
   .swiper
     /deep/ .swiper-pagination-bullet-active
       background-color: #828282
+    /deep/ .swiper-pagination-bullets-dynamic
+      left: 10%
+    /deep/ .swiper-pagination-bullets
+      top: 10px
     /deep/ .swiper-container-horizontal
       .swiper-pagination-bullets
         top: 10px !important
