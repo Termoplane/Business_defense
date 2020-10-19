@@ -1,0 +1,26 @@
+$yellow-color: #FEEA00
+$red-color: #EB5757
+$grey-color: #F3F3F3
+$breeze-color: #00d4e0
+$black-color: #171D1C
+$header-height: 8em
+$white-color: #F0F0F0
+
+$minDesktop: 768px
+
+@media (min-width: 769px)
+  .only-mobile
+    display: none !important
+@media (max-width: 768px)
+  .only-desktop
+    display: none !important
+
+@mixin mobile
+  @media (max-width: 768px)
+    @content
+@mixin desktop
+  @media (min-width: 769px)
+    @content
+@mixin large-desktop
+  @media (min-width: 1440px)
+    @content
