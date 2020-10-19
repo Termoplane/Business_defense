@@ -58,10 +58,10 @@
               3
             </h1>
             <h1 class="slide-header">
-              Проводим <br> общественные <br> кампании
+              Вырабатываем <br> решения
             </h1>
             <p class="slide-paragraph">
-              Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
+              Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
             </p>
           </div>
         </swiper-slide>
@@ -94,10 +94,10 @@
             3
           </h1>
           <h1 class="slide-header">
-            Проводим <br> общественные <br> кампании
+            Вырабатываем <br> решения
           </h1>
           <p class="slide-paragraph">
-            Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
+            Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
           </p>
         </div>
       </div>
@@ -145,7 +145,7 @@ export default {
     .swiper-button-next, .swiper-button-prev
       color: #828282
     .slide
-      width: 288px
+      width: 100%
       height: 16.5rem
       margin: auto
       background-size: 100%

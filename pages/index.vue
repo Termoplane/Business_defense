@@ -5,6 +5,8 @@
     <Principles />
     <History />
     <Founder />
+    <Form />
+    <Projects />
     <Footer />
   </div>
 </template>
@@ -16,6 +18,8 @@ import Principles from '~/components/Principles'
 import History from '~/components/History'
 import Founder from '~/components/Founder'
 import Footer from '~/components/Footer'
+import Form from '~/components/Form'
+import Projects from '~/components/Projects'
 
 export default {
   components: {
@@ -24,7 +28,9 @@ export default {
     Principles,
     History,
     Founder,
-    Footer
+    Footer,
+    Form,
+    Projects
   }
 }
 </script>

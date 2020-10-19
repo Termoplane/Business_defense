@@ -16,6 +16,7 @@
         view-box="0 0 16 17.21"
         :width="'1rem'"
         :iconColor="'#D1D2D2'"
+        :style="'margin-right: 0.5rem'"
       >
         <Phone />
       </IconBase>8-916-731-98-31</p>
@@ -51,6 +52,9 @@ export default {
       font-weight: 500
       margin-top: 0.75rem
     .phone
+      display: flex
+      justify-content: center
+      align-items: center
       margin-top: 0.75rem
       font-weight: 500
       margin-bottom: 3.7rem
