@@ -83,6 +83,7 @@ export default {
           width: 3.5rem
       .body-paragraph
         margin: 2rem 1rem
+        font-size: 0.75rem
         font-weight: 500
         @include large-desktop
           font-size: 0.5rem
@@ -91,14 +92,16 @@ export default {
           margin: 1.5rem 5rem
           font-size: 0.8rem
     .white-body
-      margin: 3.5rem 5rem
+      margin: 2rem 1rem
       color: $black-color
       @include large-desktop
         margin: 2.5rem 5.8rem
       p
         font-weight: 400
+        font-size: 0.875rem
         @include large-desktop
           font-size: 0.66rem
         @include desktop
+          margin: 1.5rem 5rem
           font-size: 0.9rem
 </style>
