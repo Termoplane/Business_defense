@@ -120,6 +120,9 @@ export default {
     IconBase,
     LogoFill
   },
+  mounted () {
+    console.log('aaaa')
+  },
   data () {
     return {
       swiperOption: {
