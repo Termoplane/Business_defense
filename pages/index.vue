@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <client-only>
+      <vue-read-progress height="4px" color="#171D1C"></vue-read-progress>
+    </client-only>
     <Home />
     <Join />
     <Principles />

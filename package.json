@@ -21,7 +21,8 @@
     "nuxt": "^2.14.7",
     "serialize-javascript": "^3.1.0",
     "swiper": "^5.3.7",
-    "vue-awesome-swiper": "^4.1.1"
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-read-progress": "^1.0.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

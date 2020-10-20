@@ -21,7 +21,7 @@
         </h2>
       </div>
       <div class="slot-content">
-        Привлекли внимание 280.000 человек к проблеме. Собрали 3.500 историй предпринимателей, оказавшихся в сложной ситуации
+        Привлекли внимание российского общества к проблеме. Собрали 3.500 историй предпринимателей, оказавшихся в сложной ситуации из-за пандемии COVID-19
       </div>
     </div>
   </div>
@@ -36,6 +36,8 @@ export default {
 <style lang="sass" scoped>
   .main
     margin-top: 3.5rem
+    @include large-desktop
+      margin: 3.5rem 6rem 0rem
     h1
       margin-left: 1rem
       letter-spacing: 0.02rem
@@ -48,7 +50,11 @@ export default {
         padding: 0.5rem 0
         h2
           margin-left: 1rem
+          @include large-desktop
+            font-size: 1.3rem
       &-content
         background: $grey-color
         padding: 0.5rem 1rem 1.5rem
+        @include large-desktop
+          font-size: 0.6rem
 </style>

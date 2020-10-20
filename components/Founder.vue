@@ -28,7 +28,7 @@
       </p>
     </div>
     <div class="white-body">
-      <p> Уверен, что наученный горьким опытом ожидания помощи от государства, малый бизнес готов объединяться и вместе отстаивать свои права. Для этого мы и создаём Общество защиты предпринимателей. Присоединяйтесь к нашей команде! </p>
+      <p> Уверен, что наученный горьким опытом ожидания помощи от государства, малый бизнес готов объединяться и вместе отстаивать свои права. Для этого мы и создаём Общество защиты предпринимателей. <br> Присоединяйтесь к нашей команде! </p>
     </div>
   </div>
 </template>
@@ -75,12 +75,29 @@ export default {
         background-image: url("../assets/images/photo.png")
         border-radius: 50%
         border: 2px solid #FFFFFF
+        @include desktop
+          width: 3.5rem
+          margin-top: -2rem
+        @include large-desktop
+          margin-top: -2rem
+          width: 3.5rem
       .body-paragraph
-        margin: 2rem 1rem
+        margin: 1.5rem 5rem
         font-weight: 500
+        @include large-desktop
+          font-size: 0.5rem
+          margin: 1rem 5.8rem
+        @include desktop
+          font-size: 0.8rem
     .white-body
-      margin: 3.5rem 1rem
+      margin: 3.5rem 5rem
       color: $black-color
+      @include large-desktop
+        margin: 2.5rem 5.8rem
       p
-        font-weight: 500
+        font-weight: 400
+        @include large-desktop
+          font-size: 0.66rem
+        @include desktop
+          font-size: 0.9rem
 </style>

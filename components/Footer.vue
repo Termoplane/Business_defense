@@ -49,9 +49,14 @@ export default {
     .logo
       color: $yellow-color !important
       margin-top: 2.5rem
+      @include large-desktop
+        margin-top: 1rem
     .email
       font-weight: 500
       margin-top: 0.75rem
+      @include large-desktop
+        transform: scale(0.6)
+        margin-top: 0.3rem
     .phone
       display: flex
       justify-content: center
@@ -59,4 +64,8 @@ export default {
       margin-top: 0.75rem
       font-weight: 500
       margin-bottom: 3.7rem
+      @include large-desktop
+        margin-bottom: 1rem
+        transform: scale(0.6)
+        margin-top: 0.3rem
 </style>

@@ -13,14 +13,14 @@
         <div class="yellow-rectangle"></div>
         Финансовая <br> независимость
       </h2>
-      <p> Ассоциация существует только на деньги <br> её членов. Это позволяет нам заниматься <br> по настоящему важными вущами. </p>
+      <p> Позволяет заниматься тем, <br> что мы считаем по-настоящему важным.  </p>
     </div>
     <div class="principle">
       <h2>
         <div class="yellow-rectangle"></div>
         Интересы <br> малого бизнеса <br> на первом месте
       </h2>
-      <p> Нам нужно научиться защищать свои <br> права. Малый бизнес — основа <br>  большинства развитых экономик, а не <br> топливо для государств. </p>
+      <p> Малый бизнес — основа развития <br> отечественной экономики,<br> а не топливо для амбиций государства </p>
     </div>
   </div>
 </template>
@@ -34,6 +34,8 @@ export default {
 <style lang='sass' scoped>
   .container
     margin-top: 3.5rem
+    @include large-desktop
+      margin: 3.5rem 3rem
     .main-header
       margin-left: 1rem
     .principle
@@ -42,9 +44,13 @@ export default {
         position: relative
         margin-top: 2rem
         margin-left: 1rem
+        @include large-desktop
+          font-size: 1.3rem
       p
         margin-top: 0.5rem
         margin-left: 1rem
+        @include large-desktop
+          font-size: 0.6rem
       .yellow-rectangle
         position: absolute
         width: 14rem
@@ -53,4 +59,7 @@ export default {
         z-index: -1
         bottom: -0.25rem
         left: -1rem
+        @include large-desktop
+          width: 30rem
+          left: -16rem
 </style>

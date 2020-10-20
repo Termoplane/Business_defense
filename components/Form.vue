@@ -19,7 +19,7 @@
     </div>
 
     <div class="field">
-      <label for="name"> Email <div style="flex-grow: 1" /> <div ref="email" class="danger error-box"> Вы забыли заполнить </div></label>
+      <label for="name"> Ваш Email <div style="flex-grow: 1" /> <div ref="email" class="danger error-box"> Вы забыли заполнить </div></label>
       <input
         id="name"
         v-model="email"
@@ -43,7 +43,7 @@
     </div>
 
     <div class="field">
-      <label for="name"> В каком регионе вы работаете? <div style="flex-grow: 1" /> <div ref="city" class="danger error-box"> Вы забыли заполнить </div></label>
+      <label for="name"> Регион работы <div style="flex-grow: 1" /> <div ref="city" class="danger error-box"> Вы забыли заполнить </div></label>
       <input
         id="name"
         v-model="city"
@@ -55,7 +55,7 @@
     </div>
 
     <div class="field">
-      <label for="name"> Для чего вы хотите вступить в Общество? <div style="flex-grow: 1" /> <div ref="aim" class="danger error-box" /></label>
+      <label for="name"> Цели вступления в Общество <div style="flex-grow: 1" /> <div ref="aim" class="danger error-box" /></label>
       <textarea
         id="name"
         v-model="aim"
@@ -67,7 +67,7 @@
     </div>
 
     <div class="field">
-      <label for="name"> Расскажите о своём бизнесе: <div style="flex-grow: 1" /> <div ref="business" class="danger error-box"> Вы забыли заполнить </div></label>
+      <label for="name"> Расскажите подробнее о своём деле <div style="flex-grow: 1" /> <div ref="business" class="danger error-box"> Вы забыли заполнить </div></label>
       <textarea id="name" v-model="about_business" required class="field__input" placeholder="Название вашей компании, сфера деятельности и проч." />
     </div>
 
@@ -85,14 +85,14 @@
           </div>
         </div>
         <div class="text" :style="{ color: checked ? '#FEEA00' : '' }">
-          Являюсь собственником бизнеса
+          Я являюсь собственником бизнеса
         </div>
       </div>
     </div>
 
     <div class="submit">
       <div class="submit__button" @click="submit">
-        Подать заявку
+        Отправить заявку
       </div>
     </div>
   </div>
@@ -244,6 +244,7 @@ export default {
     background: $black-color
     h2
       margin-top: 3rem
+      letter-spacing: 0.07rem
     p
       margin-top: 0.5rem
       font-size: 0.625rem
@@ -260,6 +261,8 @@ export default {
         background: $black-color
         padding: 1rem 6rem
         letter-spacing: 0.01rem
+        @include large-desktop
+          transform: scale(0.6)
     .checkbox
       margin-top: 2.3125rem
       margin-bottom: 3.375rem
@@ -267,12 +270,17 @@ export default {
       display: flex
       justify-content: center
       align-items: center
+      @include large-desktop
+        width: 40%
+        margin-top: 1rem
       &__inner
         width: 90%
         height: 2.375rem
         display: flex
         align-items: center
         border: 1px solid #828282
+        @include large-desktop
+          height: 1.5rem
         .checker
           display: flex
           justify-content: center
@@ -281,9 +289,13 @@ export default {
           height: 100%
           border: 1px solid $yellow-color
           width: 2.375rem
+          @include large-desktop
+            width: 1.5rem
         .text
           margin: 0 auto
           font-size: 0.875rem
+          @include large-desktop
+            font-size: 0.4rem
     .field
       margin-top: 2.3125rem
       display: flex
@@ -291,6 +303,9 @@ export default {
       align-items: center
       flex-direction: column
       width: 90%
+      @include large-desktop
+        width: 40%
+        margin-top: 1rem
       label
         display: flex
         width: 83%
@@ -299,10 +314,15 @@ export default {
         margin-left: 1.7rem
         font-size: 0.625rem
         letter-spacing: 0.03rem
+        @include large-desktop
+            font-size: 0.24rem
+            margin-left: 1rem
         .danger
           color: $red-color
           font-size: 0.625rem
           letter-spacing: 0.03rem
+          @include large-desktop
+            font-size: 0.24rem
         .error-box
           display: none
       &__input
@@ -313,9 +333,13 @@ export default {
         max-width: 90%
         color: $yellow-color
         outline: none
+        @include large-desktop
+            font-size: 0.4rem
         &::focus
           background: $black-color
         ::placeholder
           font-size: 0.875rem
           color: #828282
+          @include large-desktop
+            font-size: 0.29rem
 </style>

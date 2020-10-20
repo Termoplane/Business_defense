@@ -33,14 +33,16 @@ export default {
     flex-direction: column
     justify-content: center
     align-items: center
+    @include large-desktop
+      justify-content: flex-start
+      align-items: start
     width: 100%
     height: 8.5625rem
     background-color: $yellow-color
-    margin-top: 3rem
+    margin-top: 6rem
     @include large-desktop
-      margin-top: -4rem
-    @include desktop
-      margin-top: -4rem
+      margin-top: -6rem
+      height: 4.5rem
     .button
       cursor: pointer
       color: $white-color
@@ -50,10 +52,18 @@ export default {
       align-items: center
       width: 18rem
       height: 3rem
-      margin: auto
       background: $black-color
       text-align: center
+      @include large-desktop
+        margin: 0 5rem
+        height: 1rem
+        width: 6rem
+        span
+          font-size: 0.33rem
     .paragraph
       font-size: 0.625rem
       margin-top: 0.1rem
+      @include large-desktop
+        font-size: 0.2rem
+        margin: 0 6.5rem
 </style>
