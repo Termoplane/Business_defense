@@ -7,6 +7,7 @@ export default {
     title: 'Общество защиты предпринимателей',
     meta: [
       { charset: 'utf-8' },
+      { 'name': 'format-detection', 'content': 'telephone=no' },
       {
         name: 'apple-mobile-web-app-title',
         content: 'Общество защиты предпринимателей',
@@ -35,7 +36,7 @@ export default {
         vmid: 'og:description',
         hid: 'og:description'
       },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, minimal-ui' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Общество защиты предпринимателей' }
     ]
   },
@@ -57,12 +58,15 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/pwa'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/style-resources',
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv',
     [
       '@nuxtjs/firebase',
       {
@@ -92,5 +96,9 @@ export default {
     sass: [
       '@/assets/styles/_variables.sass'
     ]
+  },
+  build: {
+    extend (config, ctx) {
+    }
   }
 }
