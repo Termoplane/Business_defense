@@ -1,13 +1,15 @@
 <template>
   <div class="container">
-    <Home />
-    <Join />
-    <Principles />
-    <History />
-    <Founder />
-    <Form />
-    <Projects />
-    <Footer />
+    <client-only>
+      <Home />
+      <Join />
+      <Principles />
+      <History />
+      <Founder />
+      <Form />
+      <Projects />
+      <Footer />
+    </client-only>
   </div>
 </template>
 
@@ -22,6 +24,7 @@ import Form from '~/components/Form'
 import Projects from '~/components/Projects'
 
 export default {
+  name: 'Index',
   components: {
     Home,
     Join,

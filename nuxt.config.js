@@ -1,6 +1,6 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  mode: 'universal',
+  target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -92,6 +92,10 @@ export default {
     sass: [
       '@/assets/styles/_variables.sass'
     ]
+  },
+
+  router: {
+    base: '/'
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
