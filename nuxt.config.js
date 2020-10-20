@@ -92,11 +92,5 @@ export default {
     sass: [
       '@/assets/styles/_variables.sass'
     ]
-  },
-
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-    extend (config, ctx) {
-    }
   }
 }
