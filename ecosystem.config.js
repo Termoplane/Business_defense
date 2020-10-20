@@ -3,7 +3,8 @@ module.exports = {
     {
       name: "nuxt-prod",
       script: "npm",
-      args: "run start"
+      args: "run start",
+      port: 4000
     }
   ]
 }
