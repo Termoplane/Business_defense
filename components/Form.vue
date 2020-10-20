@@ -101,6 +101,7 @@
 <script>
 import IconBase from './icons/IconBase.vue'
 import Checkmark from './icons/set/Checkmark'
+import 'swiper/css/swiper.css'
 
 export default {
   components: {
