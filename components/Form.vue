@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="form">
     <h2>
       Вступить
     </h2>

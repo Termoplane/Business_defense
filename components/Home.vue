@@ -1,31 +1,74 @@
 <template>
   <div class="home">
-    <div class="logo" style="z-index: 100">
-      <IconBase
-        view-box="0 0 16 17.21"
-        :width="'1rem'"
-        :icon-color="'#171D1C'"
-      >
-        <MainLogo />
-      </IconBase>
-    </div>
-    <div class="logo">
-      <IconBase
-        view-box="0 0 16 17.21"
-        :width="'1rem'"
-      >
-        <LogoFill />
-      </IconBase>
-    </div>
-    <div class="main-header">
-      <h1> Общество <br> защиты <br> предпринимателей </h1>
-    </div>
-    <div class="yellow-rectangle" />
-    <swiper class="swiper" :options="swiperOption">
-      <div slot="pagination" class="swiper-pagination swiper-pagination-bullets" />
-      <div slot="button-prev" class="swiper-button-prev" />
-      <div slot="button-next" class="swiper-button-next" />
-      <swiper-slide>
+    <client-only>
+      <div class="logo" style="z-index: 100">
+        <IconBase
+          view-box="0 0 16 17.21"
+          :width="'1rem'"
+          :icon-color="'#171D1C'"
+        >
+          <MainLogo />
+        </IconBase>
+      </div>
+      <div class="logo">
+        <IconBase
+          view-box="0 0 16 17.21"
+          :width="'1rem'"
+        >
+          <LogoFill />
+        </IconBase>
+      </div>
+      <div class="main-header">
+        <h1> Общество <br> защиты <br> предпринимателей </h1>
+      </div>
+      <div class="yellow-rectangle" />
+      <client-only>
+        <swiper class="swiper" :options="swiperOption">
+          <div slot="pagination" class="swiper-pagination swiper-pagination-bullets" />
+          <div slot="button-prev" class="swiper-button-prev" />
+          <div slot="button-next" class="swiper-button-next" />
+          <swiper-slide>
+            <div class="slide slide-1">
+              <h1 class="slide-int">
+                1
+              </h1>
+              <h1 class="slide-header">
+                Информируем
+              </h1>
+              <p class="slide-paragraph">
+                Рассказываем о самых <br> выжных новостях для <br> предпринимателей
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide slide-2">
+              <h1 class="slide-int">
+                2
+              </h1>
+              <h1 class="slide-header">
+                Проводим <br> общественные <br> кампании
+              </h1>
+              <p class="slide-paragraph">
+                Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide slide-3">
+              <h1 class="slide-int" style="right: 0.4rem">
+                3
+              </h1>
+              <h1 class="slide-header">
+                Вырабатываем <br> решения
+              </h1>
+              <p class="slide-paragraph">
+                Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
+              </p>
+            </div>
+          </swiper-slide>
+        </swiper>
+      </client-only>
+      <div class="data-container">
         <div class="slide slide-1">
           <h1 class="slide-int">
             1
@@ -37,8 +80,6 @@
             Рассказываем о самых <br> выжных новостях для <br> предпринимателей
           </p>
         </div>
-      </swiper-slide>
-      <swiper-slide>
         <div class="slide slide-2">
           <h1 class="slide-int">
             2
@@ -50,8 +91,6 @@
             Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
           </p>
         </div>
-      </swiper-slide>
-      <swiper-slide>
         <div class="slide slide-3">
           <h1 class="slide-int" style="right: 0.4rem">
             3
@@ -63,43 +102,8 @@
             Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
           </p>
         </div>
-      </swiper-slide>
-    </swiper>
-    <div class="data-container">
-      <div class="slide slide-1">
-        <h1 class="slide-int">
-          1
-        </h1>
-        <h1 class="slide-header">
-          Информируем
-        </h1>
-        <p class="slide-paragraph">
-          Рассказываем о самых <br> выжных новостях для <br> предпринимателей
-        </p>
       </div>
-      <div class="slide slide-2">
-        <h1 class="slide-int">
-          2
-        </h1>
-        <h1 class="slide-header">
-          Проводим <br> общественные <br> кампании
-        </h1>
-        <p class="slide-paragraph">
-          Привлекаем внимание <br> общества и СМИ <br> к проблемам малого бизнеса
-        </p>
-      </div>
-      <div class="slide slide-3">
-        <h1 class="slide-int" style="right: 0.4rem">
-          3
-        </h1>
-        <h1 class="slide-header">
-          Вырабатываем <br> решения
-        </h1>
-        <p class="slide-paragraph">
-          Участвуем в обсуждении <br> решений, которые должны <br> помочь малому бизнесу <br> развиваться
-        </p>
-      </div>
-    </div>
+    </client-only>
   </div>
 </template>
 

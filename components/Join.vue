@@ -1,17 +1,29 @@
 <template>
   <div class="container">
-    <div style="flex-grow: 1"></div>
-    <div class="button">
+    <div style="flex-grow: 1" />
+    <div class="button" @click="slideIntoForm">
       <span> Вступить </span>
     </div>
-    <p class="paragraph"> Начнем с заполнения заявки </p>
-    <div style="flex-grow: 0.6"></div>
+    <p class="paragraph">
+      Начнем с заполнения заявки
+    </p>
+    <div style="flex-grow: 0.6" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Join'
+  name: 'Join',
+  methods: {
+    slideIntoForm () {
+      setTimeout(() => {
+        document.getElementById('form').scrollIntoView({
+          block: 'start',
+          behavior: 'smooth'
+        })
+      }, 0)
+    }
+  }
 }
 </script>
 

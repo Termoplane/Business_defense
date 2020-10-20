@@ -1,15 +1,13 @@
 <template>
   <div class="container">
-    <client-only>
-      <Home />
-      <Join />
-      <Principles />
-      <History />
-      <Founder />
-      <Form />
-      <Projects />
-      <Footer />
-    </client-only>
+    <Home />
+    <Join />
+    <Principles />
+    <History />
+    <Founder />
+    <Form />
+    <Projects />
+    <Footer />
   </div>
 </template>
 
