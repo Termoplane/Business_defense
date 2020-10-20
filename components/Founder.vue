@@ -38,6 +38,7 @@ import IconBase from './icons/IconBase.vue'
 import Quotes from './icons/set/Quotes'
 
 export default {
+  name: 'Founder',
   components: {
     IconBase,
     Quotes

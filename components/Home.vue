@@ -110,6 +110,7 @@ import LogoFill from './icons/set/LogoFill'
 import 'swiper/css/swiper.css'
 
 export default {
+  name: 'Home',
   components: {
     MainLogo,
     IconBase,

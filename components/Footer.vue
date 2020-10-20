@@ -29,6 +29,7 @@ import MainLogo from './icons/set/MainLogo'
 import Phone from './icons/set/Phone'
 
 export default {
+  name: 'Footer',
   components: {
     IconBase,
     MainLogo,

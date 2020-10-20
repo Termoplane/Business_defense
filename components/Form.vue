@@ -104,6 +104,7 @@ import Checkmark from './icons/set/Checkmark'
 import 'swiper/css/swiper.css'
 
 export default {
+  name: 'Form',
   components: {
     Checkmark,
     IconBase
