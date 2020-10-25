@@ -104,6 +104,7 @@
 import IconBase from './icons/IconBase.vue'
 import Checkmark from './icons/set/Checkmark'
 import 'swiper/css/swiper.css'
+import 'element-ui/packages/theme-chalk/src/index.scss'
 
 export default {
   name: 'Form',
@@ -127,51 +128,33 @@ export default {
     submit () {
       const re = /\S+@\S+\.\S+/ // regexp for email validation if browser doesn't support input email validation
       const email = this.email
-      if (!this.name) {
+      if (!this.name || !this.email || !this.phone || !this.city || !this.aim || !this.about_business) {
         this.$message({
           message: 'Пожалуйста, заполните все необходимые поля формы.',
           type: 'error'
         })
+      }
+      if (!this.name) {
         this.$refs.name.style = 'display: block'
         this.$refs.name.textContent = 'Вы забыли заполнить'
       }
       if (!this.email) {
-        this.$message({
-          message: 'Пожалуйста, заполните все необходимые поля формы.',
-          type: 'error'
-        })
         this.$refs.email.style = 'display: block'
         this.$refs.email.textContent = 'Вы забыли заполнить'
       }
       if (!this.phone) {
-        this.$message({
-          message: 'Пожалуйста, заполните все необходимые поля формы.',
-          type: 'error'
-        })
         this.$refs.phone.style = 'display: block'
         this.$refs.phone.textContent = 'Вы забыли заполнить'
       }
       if (!this.city) {
-        this.$message({
-          message: 'Пожалуйста, заполните все необходимые поля формы.',
-          type: 'error'
-        })
         this.$refs.city.style = 'display: block'
         this.$refs.city.textContent = 'Вы забыли заполнить'
       }
       if (!this.aim) {
-        this.$message({
-          message: 'Пожалуйста, заполните все необходимые поля формы.',
-          type: 'error'
-        })
         this.$refs.aim.style = 'display: block'
         this.$refs.aim.textContent = 'Вы забыли заполнить'
       }
       if (!this.about_business) {
-        this.$message({
-          message: 'Пожалуйста, заполните все необходимые поля формы.',
-          type: 'error'
-        })
         this.$refs.business.style = 'display: block'
         this.$refs.business.textContent = 'Вы забыли заполнить'
       }
