@@ -264,10 +264,11 @@ export default {
         text-align: center
         background: $yellow-color
         color: $black-color
-        padding: 1rem 6rem
+        padding: 1rem 4rem
         letter-spacing: 0.01rem
         @include desktop
           transform: scale(0.6)
+          padding: 1rem 6rem
     .grid
       @include desktop
         display: grid
@@ -293,6 +294,7 @@ export default {
           display: flex
           align-items: center
           border: 1px solid #828282
+          text-align: center
           .checker
             display: flex
             justify-content: center
