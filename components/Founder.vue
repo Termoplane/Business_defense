@@ -48,6 +48,8 @@ export default {
 
 <style lang="sass" scoped>
   .container
+    @include desktop
+      margin: 0 12.5%
     .header
       text-align: center
       display: flex
@@ -70,6 +72,9 @@ export default {
       align-items: center
       margin-top: 3.375rem
       background: $black-color
+      @include desktop
+        border: 0.25rem solid $yellow-color
+        border-bottom: 0px solid #000
       .photo
         margin-top: -2.8rem
         background-image: url("../assets/images/photo.png")
@@ -78,30 +83,24 @@ export default {
         @include desktop
           width: 3.5rem
           margin-top: -2rem
-        @include large-desktop
-          margin-top: -2rem
-          width: 3.5rem
       .body-paragraph
         margin: 2rem 1rem
         font-size: 0.75rem
         font-weight: 500
-        @include large-desktop
-          font-size: 0.5rem
-          margin: 1rem 5.8rem
         @include desktop
           margin: 1.5rem 5rem
-          font-size: 0.8rem
+          font-size: 0.6rem
     .white-body
-      margin: 2rem 1rem
+      margin: 0rem
       color: $black-color
-      @include large-desktop
-        margin: 2.5rem 5.8rem
+      @include desktop
+        border: 0.25rem solid $yellow-color
+        margin-bottom: 2rem
       p
         font-weight: 400
         font-size: 0.875rem
-        @include large-desktop
-          font-size: 0.66rem
+        margin: 1.5rem 1rem
         @include desktop
           margin: 1.5rem 5rem
-          font-size: 0.9rem
+          font-size: 0.7rem
 </style>

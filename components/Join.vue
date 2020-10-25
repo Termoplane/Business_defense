@@ -4,9 +4,6 @@
     <div class="button" @click="slideIntoForm">
       <span> Вступить </span>
     </div>
-    <p class="paragraph">
-      Начнем с заполнения заявки
-    </p>
     <div style="flex-grow: 0.6" />
   </div>
 </template>
@@ -33,16 +30,15 @@ export default {
     flex-direction: column
     justify-content: center
     align-items: center
-    @include large-desktop
-      justify-content: flex-start
-      align-items: start
-    width: 100%
+    max-width: 100%
     height: 8.5625rem
-    background-color: $yellow-color
-    margin-top: 6rem
-    @include large-desktop
-      margin-top: -6rem
+    background-color: rgb(255,247,153)
+    margin-top: 4.95rem
+    @include desktop
       height: 4.5rem
+    @include large-desktop
+      height: 4.5rem
+      margin-top: 2rem
     .button
       cursor: pointer
       color: $white-color
@@ -50,20 +46,10 @@ export default {
       flex-direction: column
       justify-content: center
       align-items: center
-      width: 18rem
-      height: 3rem
+      width: 13rem
+      height: 2rem
       background: $black-color
       text-align: center
-      @include large-desktop
-        margin: 0 5rem
-        height: 1rem
-        width: 6rem
-        span
-          font-size: 0.33rem
-    .paragraph
-      font-size: 0.625rem
-      margin-top: 0.1rem
-      @include large-desktop
-        font-size: 0.2rem
-        margin: 0 6.5rem
+      @include desktop
+        font-size: 0.9rem
 </style>

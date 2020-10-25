@@ -1,91 +1,93 @@
 <template>
-  <div class="container" id="form">
+  <div id="form" class="container">
     <h2>
       Вступить
     </h2>
     <p>
       *Нужно заполнить все поля
     </p>
-    <div class="field">
-      <label for="name"> Имя <div style="flex-grow: 1" /> <div ref="name" class="danger error-box"> Вы забыли заполнить </div></label>
-      <input
-        id="name"
-        v-model="name"
-        required
-        type="text"
-        class="field__input"
-        placeholder="Как к вам обращаться?"
-      >
-    </div>
+    <div class="grid">
+      <div class="field">
+        <label for="name"> Имя <div style="flex-grow: 1" /> <div ref="name" class="danger error-box"> Вы забыли заполнить </div></label>
+        <input
+          id="name"
+          v-model="name"
+          required
+          type="text"
+          class="field__input"
+          placeholder="Как к вам обращаться?"
+        >
+      </div>
 
-    <div class="field">
-      <label for="name"> Ваш Email <div style="flex-grow: 1" /> <div ref="email" class="danger error-box"> Вы забыли заполнить </div></label>
-      <input
-        id="name"
-        v-model="email"
-        required
-        type="email"
-        class="field__input"
-        placeholder="test@test.ru"
-      >
-    </div>
+      <div class="field">
+        <label for="name"> Ваш Email <div style="flex-grow: 1" /> <div ref="email" class="danger error-box"> Вы забыли заполнить </div></label>
+        <input
+          id="name"
+          v-model="email"
+          required
+          type="email"
+          class="field__input"
+          placeholder="test@test.ru"
+        >
+      </div>
 
-    <div class="field">
-      <label for="name"> Контактный номер <div style="flex-grow: 1" /> <div ref="phone" class="danger error-box"> Вы забыли заполнить </div></label>
-      <input
-        id="name"
-        v-model="phone"
-        required
-        type="phone"
-        class="field__input"
-        placeholder="+7 777 777-77-77"
-      >
-    </div>
+      <div class="field">
+        <label for="name"> Контактный номер <div style="flex-grow: 1" /> <div ref="phone" class="danger error-box"> Вы забыли заполнить </div></label>
+        <input
+          id="name"
+          v-model="phone"
+          required
+          type="phone"
+          class="field__input"
+          placeholder="+7 777 777-77-77"
+        >
+      </div>
 
-    <div class="field">
-      <label for="name"> Регион работы <div style="flex-grow: 1" /> <div ref="city" class="danger error-box"> Вы забыли заполнить </div></label>
-      <input
-        id="name"
-        v-model="city"
-        required
-        type="text"
-        class="field__input"
-        placeholder="Москва, Санкт-Петербург..."
-      >
-    </div>
+      <div class="field">
+        <label for="name"> Регион работы <div style="flex-grow: 1" /> <div ref="city" class="danger error-box"> Вы забыли заполнить </div></label>
+        <input
+          id="name"
+          v-model="city"
+          required
+          type="text"
+          class="field__input"
+          placeholder="Москва, Санкт-Петербург..."
+        >
+      </div>
 
-    <div class="field">
-      <label for="name"> Цели вступления в Общество <div style="flex-grow: 1" /> <div ref="aim" class="danger error-box" /></label>
-      <textarea
-        id="name"
-        v-model="aim"
-        required
-        style="height: 6rem"
-        class="field__input"
-        placeholder="Расскажите, зачем вы вступаете в Общество защиты предпринимателей?"
-      />
-    </div>
+      <div class="field">
+        <label for="name"> Цели вступления в Общество <div style="flex-grow: 1" /> <div ref="aim" class="danger error-box" /></label>
+        <textarea
+          id="name"
+          v-model="aim"
+          required
+          style="height: 6rem"
+          class="field__input"
+          placeholder="Расскажите, зачем вы вступаете в Общество защиты предпринимателей?"
+        />
+      </div>
 
-    <div class="field">
-      <label for="name"> Расскажите подробнее о своём деле <div style="flex-grow: 1" /> <div ref="business" class="danger error-box"> Вы забыли заполнить </div></label>
-      <textarea id="name" v-model="about_business" required class="field__input" placeholder="Название вашей компании, сфера деятельности и проч." />
-    </div>
+      <div class="field">
+        <label for="name"> Расскажите подробнее о своём деле <div style="flex-grow: 1" /> <div ref="business" class="danger error-box"> Вы забыли заполнить </div></label>
+        <textarea id="name" v-model="about_business" required class="field__input" placeholder="Название вашей компании, сфера деятельности и проч." />
+      </div>
 
-    <div class="checkbox" @click="checked = !checked">
-      <div class="checkbox__inner">
-        <div class="checker">
-          <div v-if="checked">
-            <IconBase
-              view-box="0 0 50 50"
-              :width="'1rem'"
-              :style="'margin: 0'"
-            >
-              <Checkmark />
-            </IconBase>
+      <div class="checkbox" @click="checked = !checked">
+        <div class="checkbox__inner">
+          <div class="checker">
+            <div v-if="checked">
+              <IconBase
+                view-box="0 0 50 50"
+                :width="'1rem'"
+                :style="'margin: 0'"
+              >
+                <Checkmark />
+              </IconBase>
+            </div>
           </div>
-        </div>
-        <div class="text" :style="{ color: checked ? '#FEEA00' : '' }">
-          Я являюсь собственником бизнеса
+          <div class="text" :style="{ color: checked ? '#FEEA00' : '' }">
+            Я являюсь собственником бизнеса
+          </div>
         </div>
       </div>
     </div>
@@ -251,95 +253,103 @@ export default {
     .submit
       height: 5rem
       width: 100%
-      background: $yellow-color
+      background: $black-color
       display: flex
       justify-content: center
       align-items: center
       &__button
+        font-weight: 600
+        cursor: pointer
         margin: 2rem
         text-align: center
-        background: $black-color
+        background: $yellow-color
+        color: $black-color
         padding: 1rem 6rem
         letter-spacing: 0.01rem
-        @include large-desktop
+        @include desktop
           transform: scale(0.6)
-    .checkbox
-      margin-top: 2.3125rem
-      margin-bottom: 3.375rem
-      width: 90%
-      display: flex
-      justify-content: center
-      align-items: center
-      @include large-desktop
-        width: 40%
-        margin-top: 1rem
-      &__inner
+    .grid
+      @include desktop
+        display: grid
+        grid-template-columns: 1fr 1fr
+        justify-items: center
+        width: 75%
+      .checkbox
+        cursor: pointer
+        margin-top: 2.3125rem
+        margin-bottom: 3.375rem
         width: 90%
-        height: 2.375rem
         display: flex
+        justify-content: center
         align-items: center
-        border: 1px solid #828282
+        @include desktop
+          grid-column: 1 / 3
         @include large-desktop
-          height: 1.5rem
-        .checker
+          width: 80%
+          margin-top: 1rem
+        &__inner
+          width: 90%
+          height: 2.375rem
           display: flex
-          justify-content: center
           align-items: center
-          align-self: start
-          height: 100%
-          border: 1px solid $yellow-color
-          width: 2.375rem
-          @include large-desktop
-            width: 1.5rem
-        .text
-          margin: 0 auto
-          font-size: 0.875rem
-          @include large-desktop
-            font-size: 0.4rem
-    .field
-      margin-top: 2.3125rem
-      display: flex
-      justify-content: center
-      align-items: center
-      flex-direction: column
-      width: 90%
-      @include large-desktop
-        width: 40%
-        margin-top: 1rem
-      label
+          border: 1px solid #828282
+          .checker
+            display: flex
+            justify-content: center
+            align-items: center
+            align-self: start
+            height: 100%
+            border: 1px solid $yellow-color
+            width: 2.375rem
+          .text
+            margin: 0 auto
+            font-size: 0.875rem
+            @include desktop
+              font-size: 0.7rem
+      .field
+        margin-top: 2.3125rem
         display: flex
-        width: 83%
-        margin-bottom: 0.25rem
-        align-self: start
-        margin-left: 1.7rem
-        font-size: 0.625rem
-        letter-spacing: 0.03rem
-        @include large-desktop
-            font-size: 0.24rem
-            margin-left: 1rem
-        .danger
-          color: $red-color
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 90%
+        @include desktop
+          width: 80%
+          margin-top: 1rem
+        label
+          display: flex
+          width: 83%
+          margin-bottom: 0.25rem
+          align-self: start
+          margin-left: 1.7rem
           font-size: 0.625rem
           letter-spacing: 0.03rem
-          @include large-desktop
-            font-size: 0.24rem
-        .error-box
-          display: none
-      &__input
-        padding: 0.625rem 0 0.625rem 0.625rem
-        background: $black-color
-        border: 1px solid #828282
-        width: 90%
-        max-width: 90%
-        color: $yellow-color
-        outline: none
-        @include large-desktop
-            font-size: 0.4rem
-        &::focus
+          @include desktop
+              font-size: 0.4rem
+              margin-left: 1rem
+          .danger
+            color: $red-color
+            font-size: 0.625rem
+            letter-spacing: 0.03rem
+            @include desktop
+              font-size: 0.4rem
+          .error-box
+            display: none
+        &__input
+          padding: 0.625rem 0 0.625rem 0.625rem
           background: $black-color
-        ::placeholder
-          font-size: 0.875rem
-          color: #828282
-          @include large-desktop
-            font-size: 0.29rem
+          border: 1px solid #828282
+          width: 90%
+          max-width: 90%
+          color: $yellow-color
+          outline: none
+          @include desktop
+              font-size: 0.4rem
+          &::focus
+            background: $black-color
+          ::placeholder
+            font-size: 0.875rem
+            color: #828282
+            @include desktop
+              font-size: 0.29rem
 </style>

@@ -149,6 +149,8 @@ export default {
         top: 10px !important
     .swiper-button-next, .swiper-button-prev
       color: #828282
+      @include mobile
+        display: none
     .slide
       width: 100%
       height: 16.5rem
@@ -168,16 +170,13 @@ export default {
         font-size: 1.125rem
     .slide-1
       background-image: url('../assets/images/bg-1.svg')
-      position: relative
-      bottom: 0
+      background-position: left bottom
     .slide-2
       background-image: url('../assets/images/bg-2.svg')
-      position: relative
-      bottom: 0
+      background-position: left bottom
     .slide-3
       background-image: url('../assets/images/bg-3.svg')
-      position: relative
-      bottom: 0
+      background-position: left bottom
   .home
     @include large-desktop
       margin: 0 3rem
@@ -214,7 +213,6 @@ export default {
         max-width: 100%
       .slide
         width: 288px
-        height: 16.5rem
         background-size: 100%
         background-repeat: no-repeat
         .slide-header
