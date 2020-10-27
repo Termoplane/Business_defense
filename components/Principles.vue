@@ -4,29 +4,38 @@
       Наши принципы
     </h1>
     <div class="principle-container">
-      <div class="principle">
-        <div style="flex-grow: 1" />
-        <h2>
-          <div class="yellow-rectangle" />
-          Политическая <br> независимость
-        </h2>
-        <p> Позволяет нам откровенно говорить <br> о существующих проблемах </p>
+      <div class="wrapper">
+        <img src="../assets/images/pi.png" class="image">
+        <div class="principle">
+          <div style="flex-grow: 1" />
+          <h2>
+            <div class="yellow-rectangle" />
+            Политическая <br> независимость
+          </h2>
+          <p> Позволяет нам откровенно говорить <br> о существующих проблемах </p>
+        </div>
       </div>
-      <div class="principle">
-        <div style="flex-grow: 1" />
-        <h2>
-          <div class="yellow-rectangle" />
-          Финансовая <br> независимость
-        </h2>
-        <p> Позволяет заниматься тем, <br> что мы считаем<br>по-настоящему важным  </p>
+      <div class="wrapper">
+        <img src="../assets/images/fi.png" class="image" style="width: 4rem !important; margin-right: 0.3rem">
+        <div class="principle">
+          <div style="flex-grow: 1" />
+          <h2>
+            <div class="yellow-rectangle" />
+            Финансовая <br> независимость
+          </h2>
+          <p> Позволяет заниматься тем, <br> что мы считаем<br>по-настоящему важным  </p>
+        </div>
       </div>
-      <div class="principle">
-        <div style="flex-grow: 1" />
-        <h2>
-          <div class="yellow-rectangle" />
-          Интересы <br> малого бизнеса <br> на первом месте
-        </h2>
-        <p> Малый бизнес — основа развития <br> отечественной экономики,<br> а не топливо для амбиций государства </p>
+      <div class="wrapper">
+        <img src="../assets/images/inter.png" class="image">
+        <div class="principle">
+          <div style="flex-grow: 1" />
+          <h2>
+            <div class="yellow-rectangle" />
+            Интересы <br> малого бизнеса <br> на первом месте
+          </h2>
+          <p> Малый бизнес — основа развития <br> отечественной экономики,<br> а не топливо для амбиций государства </p>
+        </div>
       </div>
     </div>
   </div>
@@ -42,9 +51,9 @@ export default {
   .container
     margin-top: 3.5rem
     @include large-desktop
-      margin: 3.5rem 3rem
+      margin: 3.5rem 0.5rem
     @include desktop
-      margin: 3.5rem 1rem
+      margin: 3.5rem 0.5rem
     .main-header
       margin-left: 1rem
       margin-bottom: 2rem
@@ -53,41 +62,61 @@ export default {
         display: flex
         justify-content: center
         flex-wrap: wrap
-      .principle
-        position: relative
+        align-items: flex-start
+        gap: 1rem
+      .wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
         @include desktop
-          max-width: 40%
           display: flex
           justify-content: center
-          flex-direction: column
-          margin: 0rem 0.5rem
-        h2
-          align-self: end
+          align-items: flex-start
+        .image
+          width: 2.5rem
+          @include mobile
+            order: 2
+            margin-right: 1rem
+          @include desktop
+            width: 2.5rem
+            margin-top: 0.5rem
+        .principle
           position: relative
-          margin-top: 2rem
-          margin-left: 1rem
           @include desktop
-            margin: 0
-            align-self: center
-            font-size: 1.3rem
-        p
-          margin-top: 0.5rem
-          margin-left: 1rem
-          @include desktop
-            margin: 0.5rem 0.2rem
-            font-size: 0.6rem
-            height: 3rem
-            max-width: 90%
-        .yellow-rectangle
-          position: absolute
-          width: 14rem
-          height: 0.95rem
-          background: $yellow-color
-          z-index: -1
-          bottom: -0.25rem
-          left: -1rem
-          @include desktop
-            width: 100%
-            left: 0rem
-            bottom: -0.4rem
+            display: flex
+            justify-content: center
+            flex-direction: column
+            margin: 0rem 0.5rem
+          h2
+            align-self: end
+            position: relative
+            margin-top: 2rem
+            margin-left: 1rem
+            @include desktop
+              height: 3.4rem
+              margin: 0
+              font-size: 1rem
+              display: flex
+              align-items: flex-end
+          p
+            margin-top: 0.5rem
+            margin-left: 1rem
+            @include desktop
+              margin: 0.5rem 0.2rem
+              font-size: 0.55rem
+              height: 3rem
+              max-width: 90%
+          .yellow-rectangle
+            position: absolute
+            width: 14rem
+            height: 0.95rem
+            background: $yellow-color
+            z-index: -1
+            bottom: -0.25rem
+            left: -1rem
+            @include desktop
+              height: 0.8rem
+              width: 100%
+              left: 0rem
+              bottom: -0.4rem
 </style>
