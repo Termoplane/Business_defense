@@ -21,7 +21,7 @@ export default {
       },
       {
         property: 'og:site_name',
-        content: 'Общество защиты предпринимателей',
+        content: 'ozp.community',
         hid: 'og:site-name'
       },
       {
@@ -32,7 +32,7 @@ export default {
       },
       {
         property: 'og:description',
-        content: 'Общество защиты предпринимателей',
+        content: 'Общество защиты предпринимателей — независимое от государства и крупного бизнеса сообщество. Помогаем друг другу, развиваем отечественную экономику и вместе отстаиваем свои права.',
         vmid: 'og:description',
         hid: 'og:description'
       },
