@@ -134,8 +134,9 @@ export default {
         font-weight: 600
         padding: 1rem 0
         padding-left: 1rem
-        padding-right: 50%
+        padding-right: 20%
         @include desktop
+          padding-right: 50%
           font-size: 0.6rem
           margin-top: -0.2rem
           margin-left: 1.5rem
@@ -162,8 +163,9 @@ export default {
         margin-left: 1.625rem
         margin-top: 0.5rem
         font-size: 0.9rem
-        padding-right: 40%
+        padding-right: 5%
         @include desktop
+          padding-right: 40%
           font-size: 0.6rem
           margin-left: 3rem
 </style>
