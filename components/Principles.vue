@@ -10,9 +10,9 @@
           <div style="flex-grow: 1" />
           <h2>
             <div class="yellow-rectangle" />
-            Политическая <br> независимость
+            Политическая независимость
           </h2>
-          <p> Позволяет нам откровенно говорить <br> о существующих проблемах </p>
+          <p> Позволяет нам откровенно говорить о существующих проблемах </p>
         </div>
       </div>
       <div class="wrapper">
@@ -21,9 +21,9 @@
           <div style="flex-grow: 1" />
           <h2>
             <div class="yellow-rectangle" />
-            Финансовая <br> независимость
+            Финансовая независимость
           </h2>
-          <p> Позволяет заниматься тем, <br> что мы считаем<br>по-настоящему важным  </p>
+          <p> Позволяет заниматься тем,что мы считаем по-настоящему важным  </p>
         </div>
       </div>
       <div class="wrapper">
@@ -32,9 +32,9 @@
           <div style="flex-grow: 1" />
           <h2>
             <div class="yellow-rectangle" />
-            Интересы <br> малого бизнеса <br> на первом месте
+            Интересы малого бизнеса на первом месте
           </h2>
-          <p> Малый бизнес — основа развития <br> отечественной экономики,<br> а не топливо для амбиций государства </p>
+          <p> Малый бизнес — основа развития отечественной экономики, а не топливо для амбиций государства </p>
         </div>
       </div>
     </div>
@@ -82,11 +82,13 @@ export default {
             margin-top: 0.5rem
         .principle
           position: relative
+          width: 15rem
           @include desktop
             display: flex
             justify-content: center
             flex-direction: column
             margin: 0rem 0.5rem
+            width: 9rem
           h2
             align-self: end
             position: relative
