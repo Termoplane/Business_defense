@@ -1,22 +1,5 @@
 <template>
   <div class="home">
-    <div class="logo" style="z-index: 100">
-      <IconBase
-        view-box="0 0 16 17.21"
-        :width="'1rem'"
-        :icon-color="'#171D1C'"
-      >
-        <MainLogo />
-      </IconBase>
-    </div>
-    <div class="logo">
-      <IconBase
-        view-box="0 0 16 17.21"
-        :width="'1rem'"
-      >
-        <LogoFill />
-      </IconBase>
-    </div>
     <div class="main-header">
       <h1> Общество <br> защиты <br> предпринимателей </h1>
     </div>
@@ -106,18 +89,10 @@
 </template>
 
 <script>
-import IconBase from './icons/IconBase.vue'
-import MainLogo from './icons/set/MainLogo'
-import LogoFill from './icons/set/LogoFill'
 import 'swiper/css/swiper.css'
 
 export default {
   name: 'Home',
-  components: {
-    MainLogo,
-    IconBase,
-    LogoFill
-  },
   data () {
     return {
       swiperOption: {
@@ -153,7 +128,7 @@ export default {
         display: none
     .slide
       width: 100%
-      height: 16.5rem
+      height: 13.5rem
       margin: auto
       background-size: 100%
       background-repeat: no-repeat

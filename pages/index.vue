@@ -1,8 +1,9 @@
 <template>
   <div class="container">
     <client-only>
-      <vue-read-progress height="4px" color="#171D1C"></vue-read-progress>
+      <vue-read-progress height="4px" color="#171D1C" />
     </client-only>
+    <TheHeader />
     <Home />
     <Join />
     <Principles />
@@ -23,6 +24,7 @@ import Founder from '~/components/Founder'
 import Footer from '~/components/Footer'
 import Form from '~/components/Form'
 import Projects from '~/components/Projects'
+import TheHeader from '~/components/TheHeader'
 
 export default {
   name: 'Index',
@@ -34,7 +36,8 @@ export default {
     Founder,
     Footer,
     Form,
-    Projects
+    Projects,
+    TheHeader
   }
 }
 </script>

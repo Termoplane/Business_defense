@@ -31,14 +31,14 @@ export default {
     justify-content: center
     align-items: center
     max-width: 100%
-    height: 8.5625rem
+    height: 7rem
     background-color: rgb(255,247,153)
     margin-top: 4.95rem
     @include desktop
-      height: 4.5rem
+      height: 3rem
     @include large-desktop
-      height: 4.5rem
-      margin-top: 2rem
+      height: 3rem
+      margin-top: 1rem
     .button
       cursor: pointer
       color: $white-color

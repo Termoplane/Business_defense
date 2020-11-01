@@ -84,11 +84,11 @@ export default {
           width: 3.5rem
           margin-top: -2rem
       .body-paragraph
-        margin: 2rem 1rem
+        margin: 1rem 1rem
         font-size: 0.75rem
         font-weight: 500
         @include desktop
-          margin: 1.5rem 5rem
+          margin: 1rem 5rem
           font-size: 0.6rem
     .white-body
       margin: 0rem
