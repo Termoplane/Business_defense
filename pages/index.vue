@@ -38,6 +38,18 @@ export default {
     Form,
     Projects,
     TheHeader
+  },
+  head () {
+    return {
+      meta: [
+        {
+          property: 'og:image',
+          content: '//ozp.community/images/preview.jpg',
+          vmid: 'og:image',
+          hid: 'og:image'
+        }
+      ]
+    }
   }
 }
 </script>
