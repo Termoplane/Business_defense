@@ -68,6 +68,15 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '68995429',
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+      }
+    ],
+    [
       '@nuxtjs/firebase',
       {
         config: {
