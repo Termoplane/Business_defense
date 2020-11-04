@@ -70,7 +70,7 @@ export default {
     [
       '@nuxtjs/yandex-metrika',
       {
-        id: '68995429',
+        id: 68995429,
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true
